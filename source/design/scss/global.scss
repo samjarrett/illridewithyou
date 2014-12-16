@@ -8,7 +8,14 @@ $body-bg:                 #f2f2ea;
 $font-size-base:          17px;
 $line-height-base: 1.5;
 
-@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap";
+//@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/type";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/grid";
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap/buttons";
 
 h1 {
 	text-align: center;
