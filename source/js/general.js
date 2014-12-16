@@ -50,7 +50,7 @@ $(function() {
 		}
 		return;
 	}
-	
+
 	twttr.ready(function (twttr) {
 		twttr.events.bind('tweet', function (intent_event) {
 			if (intent_event) {
