@@ -59,3 +59,8 @@ body {
 	background-position: bottom center;
 	background-attachment: fixed;
 }
+
+.bordered-col {
+	border-top: 1px solid $base-color;
+	padding-top: 30px;
+}
