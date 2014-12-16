@@ -99,7 +99,7 @@ module.exports = function (grunt) {
 			build: {
 				args: {
 					env: 'prod',
-					url: 'http://samjarrett.github.io/illridewithyou'
+					url: 'http://www.letsridetogether.com.au'
 				}
 			}
 		},

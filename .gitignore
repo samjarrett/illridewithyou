@@ -4,3 +4,4 @@ node_modules/
 source/design/bower/
 *.log
 sculpin.phar
+*.css
