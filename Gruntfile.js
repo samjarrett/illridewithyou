@@ -55,26 +55,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		uglify: {
-			options: {
-				compress: {
-					drop_console: true
-				},
-				mangle: {
-					except: [
-						'jQuery',
-						'Backbone',
-						'Spinner',
-						'$',
-						'enquire',
-						'respond',
-						'Bootstrap',
-						'Maplace'
-					]
-				}
-			}
-		},
-
 		//* =============================================
 		//Section: WATCH
 		//================================================ */
@@ -119,7 +99,7 @@ module.exports = function (grunt) {
 			build: {
 				args: {
 					env: 'prod',
-					url: 'http://www.squareweave.com.au'
+					url: 'http://samjarrett.github.io/illridewithyou'
 				}
 			}
 		},
@@ -161,18 +141,7 @@ module.exports = function (grunt) {
 	 * `grunt build`: this task creates a production ready version of theme with 1 js file and minified css.
 	 * */
 	grunt.registerTask('build', [], function () {
-		grunt.loadNpmTasks('grunt-usemin');
-		grunt.loadNpmTasks('grunt-contrib-concat');
-		grunt.loadNpmTasks('grunt-contrib-uglify');
-		grunt.task.run('bower-install-simple:build', 'sass:build','sculpin-generate:build','copy:bower_build','useminPrepare','usemin','concat', 'uglify','htmlmin', 'cssmin', 'bless');
+		grunt.task.run('bower-install-simple:build', 'sass:build','sculpin-generate:build');
 	});
-
-	/*
-	 * `grunt preview`: this task creates a production ready build and then allows it to be seen @ http://localhost:8000
-	 * */
-	grunt.registerTask('preview', [], function () {
-		grunt.task.run('build', 'copy:build_to_dev','message:preview','sculpin-serve');
-	});
-
 
 };

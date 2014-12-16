@@ -15,7 +15,7 @@ $(function() {
 			containerHeight = $container.height();
 
 		if (windowHeight > containerHeight) {
-			$container.css({'margin-top': ((windowHeight - containerHeight) / 2) + 'px'});
+			$container.css({'margin-top': ((windowHeight - containerHeight) / 2 - 20) + 'px'});
 		} else {
 			$container.css({'margin-top': '1.5em'});
 		}
