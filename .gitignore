@@ -1,0 +1,6 @@
+output_*/
+.idea/
+node_modules/
+source/design/bower/
+*.log
+sculpin.phar

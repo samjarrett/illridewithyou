@@ -1,0 +1,27 @@
+{
+	"name": "SamResume",
+	"preferGlobal": false,
+	"version": "1.0.0",
+	"dependencies": {
+		"grunt-cli": "*"
+	},
+	"devDependencies": {
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-bower-install-simple": "*",
+		"grunt-timer": "*",
+		"grunt-sculpin": "~0.2.0",
+		"grunt-concurrent": "~1.0.0",
+		"load-grunt-tasks": "~1.0.0",
+		"jit-grunt": "~0.9.0",
+		"grunt-sass": "~0.17.0"
+	},
+	"engines": {
+		"node": ">=0.6"
+	},
+	"scripts": {
+		"postinstall": "grunt build",
+		"postupdate": "grunt build",
+		"develop": "grunt develop"
+	}
+}

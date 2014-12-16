@@ -1,0 +1,37 @@
+$font-family-sans-serif: "brandon-grotesque", sans-serif;
+
+$base-color:          #f48e78;
+$headings-color: $base-color;
+$headings-font-weight:    700;
+$font-size-h1:            88px;
+$body-bg:                 #f2f2ea;
+$font-size-base:          17px;
+$line-height-base: 1.5;
+
+@import "../bower/bootstrap-sass-twbs/assets/stylesheets/bootstrap";
+
+h1 {
+	text-align: center;
+}
+
+$btn-pledge-color:              $base-color;
+$btn-pledge-bg:                 $body-bg;
+$btn-pledge-border:             $base-color;
+
+.btn.btn-pledge {
+	margin-top: 1.5em;
+	border-width: 4px;
+	font-size: 22px;
+	@include button-variant($btn-pledge-color, $btn-pledge-bg, $btn-pledge-border);
+}
+
+.container {
+	margin-bottom: 85px;
+}
+
+body {
+	background-image: url(../../img/road.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-attachment: fixed;
+}

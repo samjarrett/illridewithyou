@@ -1,0 +1,12 @@
+{
+    "name": "illridewithyou",
+    "type": "sculpin-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Marley-Jarrett",
+            "email": "sam@samjarrett.com.au",
+            "homepage": "http://samjarrett.com.au"
+        }
+    ]
+}

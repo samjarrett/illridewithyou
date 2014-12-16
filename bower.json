@@ -1,0 +1,12 @@
+{
+	"name": "japlanning-itineries",
+	"version": "1.0.0",
+	"main": "public/css/site.css",
+	"ignore": [
+		".jshintrc", 
+		"**/*.txt"
+	],
+	"dependencies": {
+		"bootstrap-sass-twbs": "~3.3.1"
+	}
+}
