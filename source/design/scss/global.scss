@@ -26,7 +26,7 @@ $btn-pledge-bg:                 $body-bg;
 $btn-pledge-border:             $base-color;
 
 .btn.btn-pledge {
-	margin-top: 1.5em;
+	margin: 1.5em 0;
 	border-width: 4px;
 	font-size: 22px;
 	@include button-variant($btn-pledge-color, $btn-pledge-bg, $btn-pledge-border);
@@ -63,4 +63,13 @@ body {
 .bordered-col {
 	border-top: 1px solid $base-color;
 	padding-top: 30px;
+}
+.support {
+	p {
+		margin-bottom: 1em;
+	}
+
+	.supporter + .supporter {
+		margin-left: 20px;
+	}
 }
