@@ -3,7 +3,7 @@ $font-family-sans-serif: "brandon-grotesque", sans-serif;
 $base-color:          #f48e78;
 $headings-color: $base-color;
 $headings-font-weight:    700;
-$font-size-h1:            88px;
+$font-size-h1:            55px;
 $body-bg:                 #f2f2ea;
 $font-size-base:          17px;
 $line-height-base: 1.5;
@@ -67,5 +67,11 @@ body {
 
 	.supporter + .supporter {
 		margin-left: 20px;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	h1 {
+		font-size: 88px;
 	}
 }
